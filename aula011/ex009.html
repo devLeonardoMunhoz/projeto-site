@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulado</title>
+    <style>
+        body{
+            font: 15pt normal arial;
+            color: white;
+            background: rgb(55, 160, 55);
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulado Brasileiro</h1>
+    <input type="text" name="txtloc" id="txtloc">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtl = window.document.querySelector('input#txtloc')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Você veio de ${txtl.value}</p>`
+            if(txtl.value =="Brasil") {
+                res.innerHTML += '<p>Você é Brasileiro</p>'
+            }else {
+                res.innerHTML += '<p>Você é Estrangeiro</p>'
+            }
+            res.innerHTML += "<p>Seja Bem-Vindo ao País</p>"
+        }
+    </script>
+</body>
+</html>
