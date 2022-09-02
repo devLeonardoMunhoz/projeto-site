@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body {
+    font: normal 12pt arial;
+    color: white;
+    background-color: rgb(26, 16, 75);
+}
+header#cabecalho {
+    margin-top: 20px;
+    font: 18pt normal arial;
+}
+footer#rodape {
+    position: relative;
+    margin-top: 525px;
+}
+div#bloco {
+    width: 200px;
+    height: 200px;
+    margin: 150px;
+    background: white;
+}
